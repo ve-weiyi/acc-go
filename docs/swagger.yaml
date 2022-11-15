@@ -1,0 +1,370 @@
+definitions:
+  bean.LoginResp:
+    properties:
+      details:
+        $ref: '#/definitions/entity.UserInfo'
+      token:
+        example: ""
+        type: string
+      uid:
+        example: 1
+        type: integer
+      username:
+        example: admin
+        type: string
+    type: object
+  bean.UserInfoResp:
+    properties:
+      details:
+        $ref: '#/definitions/entity.UserInfo'
+      roles:
+        items:
+          type: string
+        type: array
+      uid:
+        type: integer
+      username:
+        type: string
+    type: object
+  dto.AuthReq:
+    properties:
+      code:
+        example: ""
+        type: string
+      password:
+        example: "123456"
+        type: string
+      username:
+        example: admin
+        type: string
+    type: object
+  dto.TodoReq:
+    properties:
+      tags:
+        items:
+          $ref: '#/definitions/entity.Tag'
+        type: array
+      todo:
+        $ref: '#/definitions/entity.Todo'
+    type: object
+  entity.Tag:
+    properties:
+      id:
+        type: integer
+      name:
+        description: 标签名称
+        type: string
+    type: object
+  entity.Todo:
+    properties:
+      content:
+        description: 内容
+        type: string
+      done:
+        description: 完成情况
+        type: integer
+      id:
+        type: integer
+      priority:
+        description: 优先级
+        type: integer
+      start_time:
+        description: 日期
+        example: "2022-11-16T16:00:00.000Z"
+        type: string
+      title:
+        description: 标题
+        type: string
+      uid:
+        type: integer
+    type: object
+  entity.UserInfo:
+    properties:
+      avatar:
+        type: string
+      create_time:
+        example: "2022-11-16T16:00:00.000Z"
+        type: string
+      id:
+        type: integer
+      intro:
+        type: string
+      nickname:
+        type: string
+      sex:
+        type: integer
+    type: object
+  response.PageResult:
+    properties:
+      datas: {}
+      page:
+        type: integer
+      size:
+        type: integer
+      total:
+        type: integer
+    type: object
+  response.Response:
+    properties:
+      code:
+        example: 200
+        type: integer
+      data: {}
+      msg:
+        example: success
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /api/v1/login:
+    post:
+      parameters:
+      - description: 登录参数
+        in: body
+        name: auth
+        required: true
+        schema:
+          $ref: '#/definitions/dto.AuthReq'
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/response.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/bean.LoginResp'
+              type: object
+      summary: 用户登录
+  /api/v1/tag/add:
+    post:
+      parameters:
+      - description: 登录后的token
+        in: header
+        name: Authorization
+        type: string
+      - description: 请求体
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/entity.Tag'
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/response.Response'
+      summary: 标签添加
+  /api/v1/tag/delete:
+    delete:
+      parameters:
+      - description: 登录后的token
+        in: header
+        name: Authorization
+        type: string
+      - description: id
+        in: query
+        name: id
+        required: true
+        type: integer
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/response.Response'
+      summary: 标签删除
+  /api/v1/tag/list/{page}:
+    get:
+      parameters:
+      - description: 登录后的token
+        in: header
+        name: Authorization
+        type: string
+      - description: 页码
+        in: path
+        name: page
+        required: true
+        type: string
+      - description: 关键词
+        in: query
+        name: keywords
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/response.Response'
+      summary: 标签查询
+  /api/v1/tag/update:
+    post:
+      parameters:
+      - description: 登录后的token
+        in: header
+        name: Authorization
+        type: string
+      - description: 参数
+        in: body
+        name: tag
+        required: true
+        schema:
+          $ref: '#/definitions/entity.Tag'
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/response.Response'
+      summary: 标签更新
+  /api/v1/todo/add:
+    post:
+      parameters:
+      - description: 登录后的token
+        in: header
+        name: Authorization
+        type: string
+      - description: 请求体
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/dto.TodoReq'
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/response.Response'
+      summary: todo添加
+  /api/v1/todo/delete:
+    delete:
+      parameters:
+      - description: 登录后的token
+        in: header
+        name: Authorization
+        type: string
+      - description: id
+        in: query
+        name: id
+        required: true
+        type: integer
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/response.Response'
+      summary: todo删除
+  /api/v1/todo/list/{page}:
+    get:
+      parameters:
+      - description: 登录后的token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: 页码
+        in: path
+        name: page
+        required: true
+        type: string
+      - example: ""
+        in: query
+        name: endTime
+        type: string
+      - example: ""
+        in: query
+        name: keywords
+        type: string
+      - example: ""
+        in: query
+        name: startTime
+        type: string
+      - example: ""
+        in: query
+        name: username
+        type: string
+      responses: {}
+      summary: todo查询
+  /api/v1/todo/update:
+    post:
+      parameters:
+      - description: 登录后的token
+        in: header
+        name: Authorization
+        type: string
+      - description: 请求体
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/dto.TodoReq'
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/response.Response'
+      summary: todo修改
+  /api/v1/user/info:
+    get:
+      description: 用户信息
+      parameters:
+      - description: 登录后的token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/response.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/bean.UserInfoResp'
+              type: object
+      summary: 用户信息
+  /api/v1/user/list/{page}:
+    get:
+      description: 用户列表
+      parameters:
+      - description: 登录后的token
+        in: header
+        name: Authorization
+        type: string
+      - description: 页码
+        in: path
+        name: page
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/response.Response'
+            - properties:
+                data:
+                  allOf:
+                  - $ref: '#/definitions/response.PageResult'
+                  - properties:
+                      datas:
+                        items:
+                          $ref: '#/definitions/entity.UserInfo'
+                        type: array
+                    type: object
+              type: object
+      summary: 用户列表
+  /api/v1/user/token/parse:
+    get:
+      parameters:
+      - description: 登录后的token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/response.Response'
+      summary: 用户token信息解析
+swagger: "2.0"

@@ -1,0 +1,827 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] PUT    /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] POST   /api/v1/tag/list/query/:page --> acc/app/api.TagQuery (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] PUT    /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/list/query/:page --> acc/app/api.TodoQuery (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[DEBUG][todoService.go:16]2022/11/11 09:40:02 [----> 0x14000596300]
+[DEBUG][todoService.go:34]2022/11/11 09:40:02 [Error 1062: Duplicate entry 'string' for key 'tag.name']
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] PUT    /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] POST   /api/v1/tag/list/query/:page --> acc/app/api.TagQuery (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] PUT    /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/list/query/:page --> acc/app/api.TodoQuery (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[DEBUG][todoService.go:16]2022/11/11 09:58:09 [----> 0x14000113140]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] PUT    /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] POST   /api/v1/tag/list/query/:page --> acc/app/api.TagQuery (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] PUT    /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/list/query/:page --> acc/app/api.TodoQuery (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[DEBUG][todoService.go:16]2022/11/11 10:02:01 [----> 0x140000b23c0]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] PUT    /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] POST   /api/v1/tag/list/query/:page --> acc/app/api.TagQuery (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] PUT    /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/list/query/:page --> acc/app/api.TodoQuery (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[DEBUG][todoService.go:16]2022/11/11 10:02:27 [----> 0x140004ba480]
+[DEBUG][todoService.go:16]2022/11/11 10:03:02 [----> 0x140004bb860]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] PUT    /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] POST   /api/v1/tag/list/query/:page --> acc/app/api.TagQuery (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] PUT    /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/list/query/:page --> acc/app/api.TodoQuery (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] PUT    /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] POST   /api/v1/tag/list/query/:page --> acc/app/api.TagQuery (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] PUT    /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/list/query/:page --> acc/app/api.TodoQuery (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] PUT    /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] POST   /api/v1/tag/list/query/:page --> acc/app/api.TagQuery (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] PUT    /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/list/query/:page --> acc/app/api.TodoQuery (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] POST   /api/v1/tag/list/query/:page --> acc/app/api.TagQuery (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/list/query/:page --> acc/app/api.TodoQuery (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] POST   /api/v1/tag/list/query/:page --> acc/app/api.TagQuery (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/list/query/:page --> acc/app/api.TodoQuery (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] POST   /api/v1/tag/list/query/:page --> acc/app/api.TagQuery (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/list/query/:page --> acc/app/api.TodoQuery (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[DEBUG][cors.go:13]2022/11/11 16:04:28 [localhost:8080]
+[DEBUG][cors.go:13]2022/11/11 16:04:28 [localhost:8080]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] POST   /api/v1/tag/list/query/:page --> acc/app/api.TagQuery (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/list/query/:page --> acc/app/api.TodoQuery (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[DEBUG][cors.go:13]2022/11/11 16:04:49 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 16:04:49 [/api/v1/tag/0?currentPage=0&size=5]
+[DEBUG][cors.go:13]2022/11/11 16:05:40 [/api/v1/tag/list/0?currentPage=0&size=5]
+[DEBUG][cors.go:13]2022/11/11 16:05:41 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 16:05:41 [/api/v1/tag/list/0?currentPage=0&size=5]
+[DEBUG][cors.go:13]2022/11/11 16:09:01 [/api/v1/tag/list/0]
+[DEBUG][cors.go:13]2022/11/11 16:09:03 [/api/v1/tag/list/0]
+[DEBUG][cors.go:13]2022/11/11 16:09:33 [/api/v1/tag/list/0]
+[DEBUG][cors.go:13]2022/11/11 16:10:41 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 16:10:41 [/api/v1/tag/list/0]
+[DEBUG][cors.go:13]2022/11/11 16:10:43 [/api/v1/tag/list/2]
+[DEBUG][cors.go:13]2022/11/11 16:10:45 [/api/v1/tag/list/3]
+[DEBUG][cors.go:13]2022/11/11 16:10:46 [/api/v1/tag/list/2]
+[DEBUG][cors.go:13]2022/11/11 16:10:47 [/api/v1/tag/list/1]
+[DEBUG][cors.go:13]2022/11/11 16:10:56 [/api/v1/tag/list/2]
+[DEBUG][cors.go:13]2022/11/11 16:10:57 [/api/v1/tag/list/1]
+[DEBUG][cors.go:13]2022/11/11 16:10:58 [/api/v1/tag/list/2]
+[DEBUG][cors.go:13]2022/11/11 16:10:58 [/api/v1/tag/list/1]
+[DEBUG][cors.go:13]2022/11/11 16:11:00 [/api/v1/tag/list/2]
+[DEBUG][cors.go:13]2022/11/11 16:11:02 [/api/v1/tag/list/3]
+[DEBUG][cors.go:13]2022/11/11 16:11:02 [/api/v1/tag/list/1]
+[DEBUG][cors.go:13]2022/11/11 16:12:17 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 16:12:19 [/api/v1/tag/list/1]
+[DEBUG][cors.go:13]2022/11/11 16:12:20 [/api/v1/tag/list/2]
+[DEBUG][cors.go:13]2022/11/11 16:12:21 [/api/v1/tag/list/1]
+[DEBUG][cors.go:13]2022/11/11 16:12:21 [/api/v1/tag/list/0]
+[DEBUG][cors.go:13]2022/11/11 16:12:36 [/api/v1/tag/list/1]
+[DEBUG][cors.go:13]2022/11/11 16:12:36 [/api/v1/tag/list/2]
+[DEBUG][cors.go:13]2022/11/11 16:12:38 [/api/v1/tag/list/0]
+[DEBUG][cors.go:13]2022/11/11 16:12:42 [/api/v1/tag/list/1]
+[DEBUG][cors.go:13]2022/11/11 16:12:42 [/api/v1/tag/list/2]
+[DEBUG][cors.go:13]2022/11/11 16:12:43 [/api/v1/tag/list/1]
+[DEBUG][cors.go:13]2022/11/11 16:12:44 [/api/v1/tag/list/0]
+[DEBUG][cors.go:13]2022/11/11 16:13:13 [/api/v1/tag/list/2]
+[DEBUG][cors.go:13]2022/11/11 16:13:17 [/api/v1/todo/0?currentPage=0&size=5]
+[DEBUG][cors.go:13]2022/11/11 16:14:22 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 16:14:54 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 16:14:54 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 16:15:54 [/api/v1/todo/0?currentPage=0&size=5]
+[DEBUG][cors.go:13]2022/11/11 16:15:57 [/api/v1/todo/0?currentPage=0&size=5]
+[DEBUG][cors.go:13]2022/11/11 16:16:17 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 16:16:17 [/api/v1/todo/0?currentPage=0&size=5]
+[DEBUG][cors.go:13]2022/11/11 16:17:35 [/api/v1/todo/list/0?currentPage=0&size=5]
+[DEBUG][cors.go:13]2022/11/11 16:18:39 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 16:18:45 [/api/v1/tag/add]
+[DEBUG][cors.go:13]2022/11/11 16:18:49 [/api/v1/tag/list/2]
+[DEBUG][cors.go:13]2022/11/11 16:19:27 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 16:21:22 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 16:21:23 [/api/v1/tag/list/2]
+[DEBUG][cors.go:13]2022/11/11 16:21:25 [/api/v1/tag/delete]
+[DEBUG][cors.go:13]2022/11/11 16:22:22 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 16:22:23 [/api/v1/tag/list/2]
+[DEBUG][cors.go:13]2022/11/11 16:22:25 [/api/v1/tag/delete]
+[DEBUG][cors.go:13]2022/11/11 16:22:25 [/api/v1/tag/list/2]
+[DEBUG][cors.go:13]2022/11/11 16:22:28 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 16:22:28 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 16:22:29 [/api/v1/tag/list/2]
+[DEBUG][cors.go:13]2022/11/11 16:23:34 [/api/v1/tag/delete]
+[DEBUG][cors.go:13]2022/11/11 16:23:34 [/api/v1/tag/list/2]
+[DEBUG][cors.go:13]2022/11/11 16:30:12 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 16:30:25 [/api/v1/tag/list/0]
+[DEBUG][cors.go:13]2022/11/11 16:30:31 [/api/v1/tag/list/0]
+[DEBUG][cors.go:13]2022/11/11 16:30:42 [/api/v1/todo/list/0?currentPage=0&size=5]
+[DEBUG][cors.go:13]2022/11/11 16:30:46 [/api/v1/todo/list/0?currentPage=0&size=5&title=s]
+[DEBUG][cors.go:13]2022/11/11 16:30:47 [/api/v1/todo/list/0?currentPage=0&size=5&title=s]
+[DEBUG][cors.go:13]2022/11/11 16:31:41 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 16:31:43 [/api/v1/tag/list/0?keywords=s]
+[DEBUG][cors.go:13]2022/11/11 16:32:01 [/api/v1/tag/list/0?keywords=s]
+[DEBUG][cors.go:13]2022/11/11 16:33:14 [/api/v1/tag/delete]
+[DEBUG][cors.go:13]2022/11/11 16:33:14 [/api/v1/tag/list/0?keywords=s]
+[DEBUG][cors.go:13]2022/11/11 16:33:25 [/api/v1/tag/list/0?keywords=s]
+[DEBUG][cors.go:13]2022/11/11 16:33:33 [/api/v1/tag/list/0?keywords=s]
+[DEBUG][cors.go:13]2022/11/11 16:34:37 [/api/v1/tag/list/1?keywords=s]
+[DEBUG][cors.go:13]2022/11/11 16:34:39 [/api/v1/tag/list/0?keywords=s]
+[DEBUG][cors.go:13]2022/11/11 16:34:41 [/api/v1/tag/list/2?keywords=s]
+[DEBUG][cors.go:13]2022/11/11 16:34:42 [/api/v1/tag/list/0?keywords=s]
+[DEBUG][cors.go:13]2022/11/11 16:34:43 [/api/v1/tag/list/1?keywords=s]
+[DEBUG][cors.go:13]2022/11/11 16:34:47 [/api/v1/tag/list/0?keywords=s]
+[DEBUG][cors.go:13]2022/11/11 16:35:19 [/api/v1/tag/list/1?keywords=s]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagQuery (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/list/query/:page --> acc/app/api.TodoQuery (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[DEBUG][cors.go:13]2022/11/11 16:37:29 [/api/v1/tag/list/0?keywords=s]
+[DEBUG][cors.go:13]2022/11/11 16:37:33 [/api/v1/tag/list/1?keywords=s]
+[DEBUG][cors.go:13]2022/11/11 16:41:15 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 16:41:22 [/api/v1/tag/add]
+[DEBUG][cors.go:13]2022/11/11 16:41:22 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 16:41:23 [/api/v1/tag/list/2]
+[DEBUG][cors.go:13]2022/11/11 16:41:36 [/api/v1/todo/list/0?currentPage=0&size=5]
+[DEBUG][cors.go:13]2022/11/11 16:43:12 [/api/v1/todo/list/0?currentPage=0&size=5&title=ss]
+[DEBUG][cors.go:13]2022/11/11 16:43:55 [/api/v1/todo/list/undefined]
+[DEBUG][cors.go:13]2022/11/11 16:43:59 [/api/v1/todo/list/undefined?title=ss]
+[DEBUG][cors.go:13]2022/11/11 16:45:07 [/api/v1/todo/list/-1]
+[DEBUG][cors.go:13]2022/11/11 16:45:09 [/api/v1/todo/list/-1?title=ss]
+[DEBUG][cors.go:13]2022/11/11 16:45:26 [/api/v1/todo/list/-1]
+[DEBUG][cors.go:13]2022/11/11 16:45:30 [/api/v1/todo/list/0?title=ss]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][cors.go:13]2022/11/11 16:49:19 [/swagger/doc/index.html]
+[DEBUG][cors.go:13]2022/11/11 16:49:19 [/swagger/doc/swagger-ui-bundle.js]
+[DEBUG][cors.go:13]2022/11/11 16:49:19 [/swagger/doc/swagger-ui.css]
+[DEBUG][cors.go:13]2022/11/11 16:49:19 [/swagger/doc/swagger-ui-standalone-preset.js]
+[DEBUG][cors.go:13]2022/11/11 16:49:19 [/swagger/doc/doc.json]
+[DEBUG][cors.go:13]2022/11/11 16:49:19 [/swagger/doc/favicon-32x32.png]
+[DEBUG][cors.go:13]2022/11/11 16:52:00 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 16:52:01 [/api/v1/todo/list/-1]
+[DEBUG][cors.go:13]2022/11/11 16:54:36 [/api/v1/todo/list/1?keywords=ss]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][cors.go:13]2022/11/11 16:55:28 [/api/v1/todo/list/1?keywords=ss]
+[DEBUG][todo.go:98]2022/11/11 16:55:28 [{   }]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][cors.go:13]2022/11/11 16:57:20 [/swagger/doc/index.html]
+[DEBUG][cors.go:13]2022/11/11 16:57:20 [/swagger/doc/swagger-ui.css]
+[DEBUG][cors.go:13]2022/11/11 16:57:20 [/swagger/doc/swagger-ui-bundle.js]
+[DEBUG][cors.go:13]2022/11/11 16:57:20 [/swagger/doc/swagger-ui-standalone-preset.js]
+[DEBUG][cors.go:13]2022/11/11 16:57:20 [/swagger/doc/doc.json]
+[DEBUG][cors.go:13]2022/11/11 16:57:20 [/swagger/doc/favicon-32x32.png]
+[DEBUG][cors.go:13]2022/11/11 16:57:40 [/api/v1/todo/list/1?keywords=ss]
+[DEBUG][todo.go:101]2022/11/11 16:57:40 [{   }]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][cors.go:13]2022/11/11 16:58:38 [/api/v1/todo/list/1?keywords=ss]
+[DEBUG][todo.go:101]2022/11/11 16:58:38 [{ ss  }]
+[DEBUG][cors.go:13]2022/11/11 16:59:37 [/api/v1/todo/list/0?title=ss]
+[DEBUG][todo.go:101]2022/11/11 16:59:37 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:00:35 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:00:35 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:00:35 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:00:41 [/api/v1/todo/list/0]
+[DEBUG][todo.go:101]2022/11/11 17:00:41 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:01:16 [/api/v1/todo/list/0]
+[DEBUG][todo.go:101]2022/11/11 17:01:16 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:01:19 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:01:19 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:01:19 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:01:21 [/api/v1/todo/list/0?keywords=ss]
+[DEBUG][todo.go:101]2022/11/11 17:01:21 [{ ss  }]
+[DEBUG][cors.go:13]2022/11/11 17:01:24 [/api/v1/todo/list/0?keywords=ss]
+[DEBUG][todo.go:101]2022/11/11 17:01:24 [{ ss  }]
+[DEBUG][cors.go:13]2022/11/11 17:01:26 [/api/v1/todo/list/0?keywords=ss]
+[DEBUG][todo.go:101]2022/11/11 17:01:26 [{ ss  }]
+[DEBUG][cors.go:13]2022/11/11 17:01:27 [/api/v1/todo/list/0?keywords=ss]
+[DEBUG][todo.go:101]2022/11/11 17:01:27 [{ ss  }]
+[DEBUG][cors.go:13]2022/11/11 17:01:28 [/api/v1/todo/list/0?keywords=ss]
+[DEBUG][todo.go:101]2022/11/11 17:01:28 [{ ss  }]
+[DEBUG][cors.go:13]2022/11/11 17:02:05 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:02:05 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:02:32 [/api/v1/todo/list/0]
+[DEBUG][todo.go:101]2022/11/11 17:02:32 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:02:37 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:02:37 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:02:37 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:02:43 [/api/v1/todo/list/0?keywords=%E5%90%83%E9%A5%AD]
+[DEBUG][todo.go:101]2022/11/11 17:02:43 [{ 吃饭  }]
+[DEBUG][cors.go:13]2022/11/11 17:02:48 [/api/v1/todo/list/0?keywords=%E5%90%83]
+[DEBUG][todo.go:101]2022/11/11 17:02:48 [{ 吃  }]
+[DEBUG][cors.go:13]2022/11/11 17:05:26 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:05:26 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:09:05 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:09:05 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:22:40 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:22:40 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:22:53 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:23:05 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:25:02 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:26:27 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:26:27 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:26:58 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:26:58 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:27:27 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:28:29 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:29:56 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:30:30 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:30:34 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:31:24 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:31:26 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:31:35 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:31:36 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:31:36 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:31:39 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:31:39 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:31:39 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:31:45 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:31:45 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:32:05 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:32:05 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:32:05 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:32:23 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:32:23 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:35:32 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:35:35 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:36:42 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:36:44 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:36:45 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:36:45 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:36:46 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 17:36:47 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:36:47 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:37:13 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:37:14 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:37:14 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:37:14 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:37:14 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:37:14 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:37:15 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 17:37:16 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:37:16 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:37:17 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 17:37:27 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:37:27 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:37:34 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:37:34 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:37:36 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:37:36 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:37:42 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:37:42 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:37:42 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:37:48 [/api/v1/todo/list/0?keywords=c]
+[DEBUG][todo.go:101]2022/11/11 17:37:48 [{ c  }]
+[DEBUG][cors.go:13]2022/11/11 17:37:50 [/api/v1/todo/list/0?keywords=c]
+[DEBUG][todo.go:101]2022/11/11 17:37:50 [{ c  }]
+[DEBUG][cors.go:13]2022/11/11 17:37:50 [/api/v1/todo/list/0?keywords=c]
+[DEBUG][todo.go:101]2022/11/11 17:37:50 [{ c  }]
+[DEBUG][cors.go:13]2022/11/11 17:38:30 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 17:38:30 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:38:30 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:39:04 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:39:04 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:39:07 [/api/v1/todo/list/4]
+[DEBUG][todo.go:101]2022/11/11 17:39:07 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:39:08 [/api/v1/todo/list/4]
+[DEBUG][todo.go:101]2022/11/11 17:39:08 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:39:09 [/api/v1/todo/list/4]
+[DEBUG][todo.go:101]2022/11/11 17:39:09 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:39:36 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:39:36 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:39:37 [/api/v1/todo/list/5]
+[DEBUG][todo.go:101]2022/11/11 17:39:37 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:39:38 [/api/v1/todo/list/0]
+[DEBUG][todo.go:101]2022/11/11 17:39:38 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:39:38 [/api/v1/todo/list/0]
+[DEBUG][todo.go:101]2022/11/11 17:39:38 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:39:41 [/api/v1/todo/list/2]
+[DEBUG][todo.go:101]2022/11/11 17:39:41 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:39:42 [/api/v1/todo/list/0]
+[DEBUG][todo.go:101]2022/11/11 17:39:42 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:39:42 [/api/v1/todo/list/0]
+[DEBUG][todo.go:101]2022/11/11 17:39:42 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:41:17 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:41:17 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:41:19 [/api/v1/todo/list/0]
+[DEBUG][todo.go:101]2022/11/11 17:41:19 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:41:21 [/api/v1/todo/list/0?keywords=s]
+[DEBUG][todo.go:101]2022/11/11 17:41:21 [{ s  }]
+[DEBUG][cors.go:13]2022/11/11 17:41:25 [/api/v1/todo/list/0?keywords=s]
+[DEBUG][todo.go:101]2022/11/11 17:41:25 [{ s  }]
+[DEBUG][cors.go:13]2022/11/11 17:41:28 [/api/v1/todo/list/0?keywords=s]
+[DEBUG][todo.go:101]2022/11/11 17:41:28 [{ s  }]
+[DEBUG][cors.go:13]2022/11/11 17:41:40 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:41:40 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:41:42 [/api/v1/todo/list/0?keywords=s]
+[DEBUG][todo.go:101]2022/11/11 17:41:42 [{ s  }]
+[DEBUG][cors.go:13]2022/11/11 17:41:44 [/api/v1/todo/list/0]
+[DEBUG][todo.go:101]2022/11/11 17:41:44 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:41:55 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 17:42:02 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:101]2022/11/11 17:42:02 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:42:24 [/api/v1/todo/list/7]
+[DEBUG][todo.go:101]2022/11/11 17:42:24 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:42:26 [/api/v1/todo/delete]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][cors.go:13]2022/11/11 17:46:01 [/api/v1/todo/delete]
+[DEBUG][cors.go:13]2022/11/11 17:46:01 [/api/v1/todo/list/7]
+[DEBUG][todo.go:101]2022/11/11 17:46:01 [{   }]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][cors.go:13]2022/11/11 17:47:34 [/api/v1/todo/delete]
+[DEBUG][cors.go:13]2022/11/11 17:47:34 [/api/v1/todo/list/7]
+[DEBUG][todo.go:97]2022/11/11 17:47:34 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:48:17 [/api/v1/todo/delete]
+[DEBUG][cors.go:13]2022/11/11 17:48:17 [/api/v1/todo/list/7]
+[DEBUG][todo.go:97]2022/11/11 17:48:17 [{   }]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][cors.go:13]2022/11/11 17:50:42 [/api/v1/todo/delete]
+[DEBUG][cors.go:13]2022/11/11 17:50:42 [/api/v1/todo/list/7]
+[DEBUG][todo.go:97]2022/11/11 17:50:42 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:50:57 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 17:50:58 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:97]2022/11/11 17:50:58 [{   }]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][cors.go:13]2022/11/11 17:52:19 [/api/v1/todo/delete]
+[DEBUG][cors.go:13]2022/11/11 17:52:19 [/api/v1/todo/list/-1]
+[DEBUG][todo.go:97]2022/11/11 17:52:19 [{   }]
+[DEBUG][cors.go:13]2022/11/11 17:54:36 [/api/v1/tag/list/-1]
+[DEBUG][cors.go:13]2022/11/11 18:15:40 [/api/v1/tag/list/0]
+[DEBUG][cors.go:13]2022/11/11 18:17:39 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 18:17:40 [/api/v1/tag/list/0]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][cors.go:13]2022/11/11 18:39:48 [/api/v1/tag/list/0]
+[DEBUG][cors.go:13]2022/11/11 18:39:51 [/api/v1/todo/list/0]
+[DEBUG][cors.go:13]2022/11/11 18:39:57 [/api/v1/todo/delete]
+[DEBUG][cors.go:13]2022/11/11 18:39:57 [/api/v1/todo/list/0]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][cors.go:13]2022/11/11 18:41:23 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 18:41:23 [/api/v1/todo/list/0]
+[DEBUG][cors.go:13]2022/11/11 18:41:25 [/api/v1/todo/delete]
+[DEBUG][cors.go:13]2022/11/11 18:41:25 [/api/v1/todo/list/0]
+[DEBUG][cors.go:13]2022/11/11 18:42:31 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 18:42:31 [/api/v1/todo/list/0]
+[DEBUG][cors.go:13]2022/11/11 18:42:34 [/api/v1/todo/delete]
+[DEBUG][cors.go:13]2022/11/11 18:42:34 [/api/v1/todo/list/0]
+[DEBUG][cors.go:13]2022/11/11 18:43:12 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 18:43:13 [/api/v1/todo/list/0]
+[DEBUG][cors.go:13]2022/11/11 18:43:15 [/api/v1/todo/delete]
+[DEBUG][cors.go:13]2022/11/11 18:43:46 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 18:43:47 [/api/v1/todo/list/0]
+[DEBUG][cors.go:13]2022/11/11 18:43:49 [/api/v1/todo/delete]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] POST   /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] POST   /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][cors.go:13]2022/11/11 18:45:52 [/api/v1/todo/delete]
+[DEBUG][cors.go:13]2022/11/11 18:49:09 [/api/v1/todo/list/0]
+[DEBUG][cors.go:13]2022/11/11 18:51:14 [/api/v1/todo/list/0]
+[DEBUG][cors.go:13]2022/11/11 18:51:21 [/api/v1/todo/delete]
+[DEBUG][cors.go:13]2022/11/11 18:53:03 [/api/v1/todo/list/0]
+[DEBUG][cors.go:13]2022/11/11 18:53:05 [/api/v1/todo/delete]
+[DEBUG][cors.go:13]2022/11/11 18:53:18 [/api/v1/todo/delete]
+[DEBUG][cors.go:13]2022/11/11 18:57:19 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 18:57:19 [/api/v1/todo/list/0]
+[DEBUG][cors.go:13]2022/11/11 18:57:22 [/api/v1/todo/delete?id=1]
+[DEBUG][cors.go:13]2022/11/11 18:57:23 [/api/v1/todo/list/0]
+[DEBUG][cors.go:13]2022/11/11 18:57:36 [/api/v1/todo/delete?id=2]
+[DEBUG][cors.go:13]2022/11/11 18:57:36 [/api/v1/todo/list/0]
+[DEBUG][cors.go:13]2022/11/11 18:57:55 [/api/v1/user/info]
+[DEBUG][cors.go:13]2022/11/11 18:57:55 [/api/v1/todo/list/0]
