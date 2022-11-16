@@ -2,9 +2,9 @@ package middleware
 
 import (
 	"acc/lib/jjwt"
+	"acc/lib/logger"
 	"acc/lib/response"
 	"github.com/gin-gonic/gin"
-	"log"
 )
 
 // JwtToken jwt中间件
@@ -19,7 +19,7 @@ func JwtToken() gin.HandlerFunc {
 			return
 		}
 
-		log.Print(claims)
+		logger.Debug(claims)
 		c.Set("uid", claims.Uid)
 		c.Set("username", claims.Username)
 		c.Next()

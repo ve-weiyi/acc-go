@@ -19,9 +19,13 @@ import (
 
 // 3.init先于main运行
 func init() {
-	fmt.Println("init invoke")
+	log.Println("init invoke")
 
 	config.Setup()
+
+	if config.AppConfig.LoggerState {
+		logger.Setup()
+	}
 
 	if config.AppConfig.MysqlState {
 		orm.Setup()
@@ -31,15 +35,11 @@ func init() {
 		redis.Setup()
 	}
 
-	if config.AppConfig.LoggerState {
-		logger.Setup()
-	}
-
 }
 
 // 4.只有main包下的main才能运行
 func main() {
-	fmt.Println("main invoke")
+	log.Println("main invoke")
 	// 退出关闭 mysql 连接
 	if config.AppConfig.MysqlState {
 		defer orm.CloseDB()
@@ -62,7 +62,7 @@ func main() {
 	go func() {
 		// 服务连接
 		if err := server.ListenAndServe(); err != nil && err != http.ErrServerClosed {
-			log.Printf("监听: %s\n", err)
+			logger.Debug("监听: %s\n", err)
 		}
 	}()
 
@@ -70,12 +70,12 @@ func main() {
 	quit := make(chan os.Signal)
 	signal.Notify(quit, os.Interrupt)
 	<-quit
-	log.Println("关闭服务器...")
+	logger.Debug("关闭服务器...")
 
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 	if err := server.Shutdown(ctx); err != nil {
 		log.Fatalln("服务器关闭:", err)
 	}
-	log.Println("服务器已关闭")
+	logger.Debug("服务器已关闭")
 }

@@ -5,12 +5,13 @@ import (
 	"gorm.io/driver/mysql"
 	"gorm.io/gen"
 	"gorm.io/gorm"
+	"log"
 	"strings"
 	"testing"
 )
 
 // GEN 自动生成 GORM 模型结构体文件及使用示例 https://blog.csdn.net/Jeffid/article/details/126898000
-const dsn = "root:anker@(127.0.0.1:3306)/anker?charset=utf8mb4&parseTime=True&loc=Local"
+const dsn = "root:mysql7914@(127.0.0.1:3306)/anker?charset=utf8mb4&parseTime=True&loc=Local"
 
 func TestGenerator(t *testing.T) {
 
@@ -19,6 +20,7 @@ func TestGenerator(t *testing.T) {
 	if err != nil {
 		panic(fmt.Errorf("cannot establish db connection: %w", err))
 	}
+	log.Println("mysql connection done")
 
 	// 生成实例
 	// 指定生成代码的具体(相对)目录，默认为：./dao
@@ -46,6 +48,7 @@ func TestGenerator(t *testing.T) {
 		FieldWithIndexTag: true, // generate with gorm index tag
 		// 生成 gorm 标签的字段类型属性
 		FieldWithTypeTag: true, // generate with gorm column type tag
+
 	})
 	// 设置目标 db
 	g.UseDB(db)
@@ -79,12 +82,11 @@ func TestGenerator(t *testing.T) {
 	autoCreateTimeField := gen.FieldGORMTag("create_time", "column:create_time;type:int unsigned;autoCreateTime")
 	softDeleteField := gen.FieldType("delete_time", "soft_delete.DeletedAt")
 	// 模型自定义选项组
-	fieldOpts := []gen.ModelOpt{jsonField, autoCreateTimeField, autoUpdateTimeField, softDeleteField}
+	fieldOpts := []gen.ModelOpt{jsonField, autoCreateTimeField, autoUpdateTimeField, softDeleteField, gen.FieldTrimPrefix("tb_")}
 
 	// 创建模型的结构体,生成文件在 model 目录; 先创建的结果会被后面创建的覆盖
 	// 创建全部模型文件, 并覆盖前面创建的同名模型
 	allModel := g.GenerateAllTable(fieldOpts...)
-
 	g.ApplyBasic(allModel...)
 
 	g.Execute()

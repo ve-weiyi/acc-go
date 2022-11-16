@@ -18,9 +18,9 @@ package main表示一个可独立执行的程序，每个 Go 应用程序都包�
 package main
 
 import (
+	"acc/lib/logger"
 	"acc/lib/utils"
 	"fmt"
-	"log"
 	"testing"
 )
 
@@ -30,10 +30,10 @@ func TestName(t *testing.T) {
 
 // Success 成功返回
 func Success(data ...interface{}) {
-	log.Println("--->")
-	log.Println(len(data))
+	logger.Debug("--->")
+	logger.Debug(len(data))
 	str := fmt.Sprint(utils.CheckData(data))
-	log.Println("--->" + str)
+	logger.Debug("--->" + str)
 	sstr := fmt.Sprint(data[0])
-	log.Println(sstr)
+	logger.Debug(sstr)
 }

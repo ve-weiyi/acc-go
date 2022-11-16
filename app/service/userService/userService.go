@@ -8,8 +8,8 @@ import (
 	"acc/config"
 	"acc/lib/errCode"
 	"acc/lib/jjwt"
+	"acc/lib/logger"
 	"acc/lib/orm"
-	"log"
 )
 
 func UserGetInfoById(uid int) (*entity.UserInfo, *errCode.ApiError) {
@@ -19,8 +19,8 @@ func UserGetInfoById(uid int) (*entity.UserInfo, *errCode.ApiError) {
 }
 
 func UserLogin(auth dto.AuthReq) (*bean.LoginResp, error) {
-	log.Println("username:" + auth.Username)
-	log.Println("password:" + auth.Password)
+	logger.Debug("username:" + auth.Username)
+	logger.Debug("password:" + auth.Password)
 
 	userAuth, err := userAuthCheckLogin(auth.Username, auth.Password)
 	if err != nil {

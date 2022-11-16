@@ -5,11 +5,11 @@ import (
 	"acc/app/model/entity"
 	"acc/config"
 	"acc/lib/errCode"
+	"acc/lib/logger"
 	"acc/lib/orm"
 	"acc/lib/response"
 	"github.com/gin-gonic/gin"
 	"io"
-	"log"
 	"strconv"
 )
 
@@ -27,7 +27,7 @@ func TagAdd(ctx *gin.Context) {
 	var tag entity.Tag
 	err := ctx.ShouldBindJSON(&tag)
 	body, _ := io.ReadAll(ctx.Request.Body)
-	log.Println(body)
+	logger.Debug(body)
 	if err != nil {
 		apiG.ErrorMsg(err.Error())
 		return

@@ -2,6 +2,7 @@ package routers
 
 import (
 	"acc/app/api"
+	v1 "acc/app/api/v1"
 	"acc/app/middleware"
 	"acc/config"
 	"acc/docs"
@@ -10,7 +11,6 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"io"
-	"log"
 	"net/http"
 	"os"
 
@@ -52,7 +52,12 @@ func InitRouter() *gin.Engine {
 }
 
 func AddSystemRoute(r *gin.RouterGroup) {
+	r.GET("/", func(ctx *gin.Context) {
+		//以字符串格式返回
+		ctx.JSON(200, "hello world!")
+	})
 	r.POST("/login", api.UserLogin)
+	r.POST("/report", v1.Report)
 	auth := r.Group("/")
 	{
 		auth.POST("/tag/add", api.TagAdd)
@@ -89,5 +94,5 @@ func swaggerInit(r *gin.Engine) {
 	docs.SwaggerInfo.BasePath = ""
 	docs.SwaggerInfo.Schemes = []string{"http", "https"}
 
-	log.Println(fmt.Sprintf("http://%s/swagger/doc/index.html", host))
+	logger.Debug(fmt.Sprintf("http://%s/swagger/doc/index.html", host))
 }

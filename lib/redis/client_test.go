@@ -3,20 +3,19 @@ package redis
 import (
 	"fmt"
 	"github.com/go-redis/redis"
-	"log"
 	"testing"
 	"time"
 )
 
 func TestRedis(t *testing.T) {
-	log.Println("redis init invoke")
+	logger.Debug("redis init invoke")
 
 	rdb = redis.NewClient(&redis.Options{Addr: "localhost:6379", Password: "", DB: 0})
 	res, err := rdb.Ping().Result()
 	if err != nil {
 		fmt.Println("ping 出错：", err)
 	}
-	log.Println(res)
+	logger.Debug(res)
 
 	//1 Set : expiration=0表示无过期时间
 	res, err = rdb.Set("name", "lqz", 30*time.Second).Result()

@@ -1,0 +1,287 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] PUT    /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] PUT    /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] PUT    /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] PUT    /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][cors.go:13]2022/11/15 14:26:53 [/swagger/index.html]
+[DEBUG][cors.go:13]2022/11/15 14:26:53 [/swagger/swagger-ui.css]
+[DEBUG][cors.go:13]2022/11/15 14:26:53 [/swagger/swagger-ui-standalone-preset.js]
+[DEBUG][cors.go:13]2022/11/15 14:26:53 [/swagger/swagger-ui-bundle.js]
+[DEBUG][cors.go:13]2022/11/15 14:26:53 [/swagger/favicon-32x32.png]
+[DEBUG][cors.go:13]2022/11/15 14:26:53 [/swagger/doc.json]
+[DEBUG][client.go:23]2022/11/15 18:21:09 [Redis 连接成功: PONG]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[DEBUG][router.go:91]2022/11/15 18:21:09 [http://localhost:8082/swagger/doc/index.html]
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] PUT    /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] PUT    /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][main.go:73]2022/11/15 18:27:41 [关闭服务器...]
+[DEBUG][main.go:80]2022/11/15 18:27:41 [服务器已关闭]
+[DEBUG][client.go:23]2022/11/15 18:27:45 [Redis 连接成功: PONG]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[DEBUG][router.go:91]2022/11/15 18:27:45 [http://localhost:8080/swagger/doc/index.html]
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] PUT    /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] PUT    /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][cors.go:13]2022/11/15 18:27:50 [/]
+[DEBUG][cors.go:13]2022/11/15 18:27:50 [/report]
+[DEBUG][cors.go:13]2022/11/15 18:31:22 [/report]
+[DEBUG][cors.go:13]2022/11/15 18:31:22 [/]
+[DEBUG][main.go:73]2022/11/15 18:36:58 [关闭服务器...]
+[DEBUG][main.go:80]2022/11/15 18:36:58 [服务器已关闭]
+[DEBUG][client.go:23]2022/11/15 18:37:01 [Redis 连接成功: PONG]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[DEBUG][router.go:93]2022/11/15 18:37:01 [http://localhost:8080/swagger/doc/index.html]
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] GET    /api/v1/report            --> acc/app/api/v1.Report (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] PUT    /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] PUT    /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][cors.go:13]2022/11/15 18:37:08 [/]
+[DEBUG][cors.go:13]2022/11/15 18:37:08 [/report]
+[DEBUG][cors.go:13]2022/11/15 18:37:57 [/api/v1/report]
+[DEBUG][cors.go:13]2022/11/15 18:37:57 [/api/v1/]
+[DEBUG][cors.go:13]2022/11/15 18:38:00 [/api/v1/report]
+[DEBUG][cors.go:13]2022/11/15 18:38:00 [/api/v1/]
+[DEBUG][cors.go:13]2022/11/15 18:41:08 [/api/v1/report]
+[DEBUG][cors.go:13]2022/11/15 18:41:08 [/api/v1/]
+[DEBUG][cors.go:13]2022/11/15 18:42:44 [/api]
+[DEBUG][cors.go:13]2022/11/15 18:42:53 [/]
+[DEBUG][main.go:73]2022/11/15 18:43:14 [关闭服务器...]
+[DEBUG][main.go:80]2022/11/15 18:43:14 [服务器已关闭]
+[DEBUG][client.go:23]2022/11/15 18:43:17 [Redis 连接成功: PONG]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /*path                    --> acc/routers.InitRouter.func1 (3 handlers)
+[DEBUG][client.go:23]2022/11/15 18:43:52 [Redis 连接成功: PONG]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /:path                    --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[DEBUG][router.go:93]2022/11/15 18:43:52 [http://localhost:8080/swagger/doc/index.html]
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] GET    /api/v1/report            --> acc/app/api/v1.Report (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] PUT    /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] PUT    /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][main.go:73]2022/11/15 18:48:21 [关闭服务器...]
+[DEBUG][main.go:80]2022/11/15 18:48:21 [服务器已关闭]
+[DEBUG][client.go:23]2022/11/15 18:48:24 [Redis 连接成功: PONG]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /*action                  --> acc/routers.InitRouter.func1 (3 handlers)
+[DEBUG][client.go:23]2022/11/15 18:50:12 [Redis 连接成功: PONG]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /*action                  --> acc/routers.InitRouter.func1 (3 handlers)
+[DEBUG][client.go:23]2022/11/15 18:50:21 [Redis 连接成功: PONG]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /api/*action              --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[DEBUG][router.go:93]2022/11/15 18:50:21 [http://localhost:8080/swagger/doc/index.html]
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] GET    /api/v1/report            --> acc/app/api/v1.Report (3 handlers)
+[DEBUG][client.go:23]2022/11/15 18:50:54 [Redis 连接成功: PONG]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /api/*action              --> acc/routers.InitRouter.func2 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[DEBUG][router.go:98]2022/11/15 18:50:54 [http://localhost:8080/swagger/doc/index.html]
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] GET    /api/v1/report            --> acc/app/api/v1.Report (3 handlers)
+[DEBUG][client.go:23]2022/11/15 18:50:59 [Redis 连接成功: PONG]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /api/ss/*action           --> acc/routers.InitRouter.func2 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[DEBUG][router.go:98]2022/11/15 18:50:59 [http://localhost:8080/swagger/doc/index.html]
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] GET    /api/v1/report            --> acc/app/api/v1.Report (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] PUT    /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] PUT    /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][main.go:73]2022/11/15 18:51:50 [关闭服务器...]
+[DEBUG][main.go:80]2022/11/15 18:51:50 [服务器已关闭]
+[DEBUG][client.go:23]2022/11/15 18:51:53 [Redis 连接成功: PONG]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[DEBUG][router.go:97]2022/11/15 18:51:53 [http://localhost:8080/swagger/doc/index.html]
+[GIN-debug] GET    /api/v1/                  --> acc/routers.AddSystemRoute.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] GET    /api/v1/report            --> acc/app/api/v1.Report (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] PUT    /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] PUT    /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][cors.go:13]2022/11/15 18:52:11 [/api/v1/]
+[DEBUG][cors.go:13]2022/11/15 18:52:11 [/api/v1/report]
+[DEBUG][main.go:73]2022/11/15 18:52:40 [关闭服务器...]
+[DEBUG][main.go:80]2022/11/15 18:52:40 [服务器已关闭]
+[DEBUG][client.go:23]2022/11/15 18:52:43 [Redis 连接成功: PONG]
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /public/static/images/*filepath --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> acc/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[DEBUG][router.go:97]2022/11/15 18:52:43 [http://localhost:8080/swagger/doc/index.html]
+[GIN-debug] GET    /api/v1/                  --> acc/routers.AddSystemRoute.func1 (3 handlers)
+[GIN-debug] POST   /api/v1/login             --> acc/app/api.UserLogin (3 handlers)
+[GIN-debug] POST   /api/v1/report            --> acc/app/api/v1.Report (3 handlers)
+[GIN-debug] POST   /api/v1/tag/add           --> acc/app/api.TagAdd (3 handlers)
+[GIN-debug] DELETE /api/v1/tag/delete        --> acc/app/api.TagDelete (3 handlers)
+[GIN-debug] PUT    /api/v1/tag/update        --> acc/app/api.TagUpdate (3 handlers)
+[GIN-debug] GET    /api/v1/tag/list/:page    --> acc/app/api.TagList (3 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> acc/app/api.UserGetInfo (4 handlers)
+[GIN-debug] GET    /api/v1/user/list/:page   --> acc/app/api.UserList (4 handlers)
+[GIN-debug] GET    /api/v1/user/token/parse  --> acc/app/api.UserTokenParse (4 handlers)
+[GIN-debug] DELETE /api/v1/todo/delete       --> acc/app/api.TodoDelete (4 handlers)
+[GIN-debug] PUT    /api/v1/todo/update       --> acc/app/api.TodoUpdate (4 handlers)
+[GIN-debug] POST   /api/v1/todo/add          --> acc/app/api.TodoAdd (4 handlers)
+[GIN-debug] GET    /api/v1/todo/list/:page   --> acc/app/api.TodoList (4 handlers)
+[DEBUG][cors.go:13]2022/11/15 18:52:58 [/api/v1/report]
+[DEBUG][cors.go:13]2022/11/15 18:52:58 [/api/v1/]

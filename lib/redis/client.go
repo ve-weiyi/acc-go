@@ -2,6 +2,7 @@ package redis
 
 import (
 	"acc/config"
+	"acc/lib/logger"
 	"github.com/go-redis/redis"
 	"log"
 )
@@ -19,7 +20,7 @@ func Setup() {
 	if err != nil {
 		log.Fatalf("Redis 连接失败: %v", err)
 	}
-	log.Println("Redis 连接成功: " + pong)
+	logger.Debug("Redis 连接成功: " + pong)
 }
 
 func Rdb() *redis.Client {

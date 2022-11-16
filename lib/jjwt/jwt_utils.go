@@ -7,7 +7,6 @@ import (
 	"acc/lib/logger"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
-	"log"
 	"time"
 )
 
@@ -25,7 +24,7 @@ func CreateToken(auth entity.UserAuth) string {
 	}
 	token, err := j.CreateToken(claims)
 	if err != nil {
-		log.Print(err.Error())
+		logger.Debug(err.Error())
 	}
 	return token
 }
