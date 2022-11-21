@@ -1,0 +1,61 @@
+system:
+  env: dev
+  addr: 8089
+  db-type: mysql
+  oss-type: local
+  use-multipoint: false
+  use-redis: false
+  #项目运行时生成的目录
+  RuntimeRootPath: runtime
+  #语言 zh,en
+  Locale: zh
+
+mysql:
+  path: 127.0.0.1
+  port: "3306"
+  config: charset=utf8mb4&parseTime=True&loc=Local
+  db-name: gin-vue-admin
+  username: root
+  password: mysql7914
+  prefix: ""
+  singular: false
+  engine: ""
+  max-idle-conns: 10
+  max-open-conns: 100
+  log-mode: error
+  log-zap: false
+
+redis:
+  db: 0
+  addr: ""
+  username: ""
+  password: ""
+
+
+jwt:
+  signing-key: db78df3d-9515-4d8f-b5a9-7954f433b4c6
+  expires-time: 7*3600*24
+  issuer: qmPlus
+
+zap:
+  level: info
+  prefix:
+  format: console
+  director: log
+  encode-level: LowercaseColorLevelEncoder
+  stacktrace-key: stacktrace
+  max-age: 0
+  show-line: true
+  log-in-console: true
+
+email:
+  to: xxx@qq.com
+  port: 465
+  from: xxx@163.com
+  host: smtp.163.com
+  is-ssl: true
+  secret: xxx
+  nickname: test
+
+
+
