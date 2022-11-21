@@ -1,9 +1,9 @@
 package utils
 
 import (
+	"acc/server/global"
 	"errors"
 	"os"
-	"ve-blog-go/server/global"
 
 	"go.uber.org/zap"
 )

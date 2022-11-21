@@ -1,12 +1,12 @@
 package internal
 
 import (
+	"acc/server/global"
 	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
 	"go.uber.org/zap/zapcore"
 	"os"
 	"path"
 	"time"
-	"ve-blog-go/server/global"
 )
 
 var FileRotatelogs = new(fileRotatelogs)

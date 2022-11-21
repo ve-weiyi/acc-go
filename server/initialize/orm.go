@@ -1,16 +1,14 @@
 package initialize
 
 import (
+	"acc/server/global"
 	"fmt"
-	"github.com/go-redis/redis"
-	"go.uber.org/zap"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/schema"
 	"log"
 	"time"
-	"ve-blog-go/server/global"
 )
 
 func Gorm() {
@@ -50,21 +48,4 @@ func Gorm() {
 
 	global.GVA_LOG.Info("Mysql 数据库连接成功")
 	global.GVA_DB = db
-}
-
-func Redis() {
-	redisCfg := global.GVA_CONFIG.Redis
-
-	client := redis.NewClient(&redis.Options{
-		Addr:     redisCfg.Addr,
-		Password: redisCfg.Password, // no password set
-		DB:       redisCfg.DB,       // use default DB
-	})
-	pong, err := client.Ping().Result()
-	if err != nil {
-		global.GVA_LOG.Error("redis connect ping failed, err:", zap.Error(err))
-	} else {
-		global.GVA_LOG.Info("Redis 连接成功: " + pong)
-		global.GVA_REDIS = client
-	}
 }

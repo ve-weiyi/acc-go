@@ -1,11 +1,11 @@
 package initialize
 
 import (
+	"acc/server/config"
+	"acc/server/global"
 	"encoding/json"
 	"github.com/spf13/viper"
 	"log"
-	"ve-blog-go/server/config"
-	"ve-blog-go/server/global"
 )
 
 // ReadConfig //

@@ -3,9 +3,9 @@ package main
 
 //2.导包：可以使用 import "p1" 和 import ("p1","p2" )
 import (
+	"acc/server/global"
+	"acc/server/initialize"
 	"log"
-	"ve-blog-go/server/global"
-	"ve-blog-go/server/initialize"
 )
 
 // 3.init先于main运行

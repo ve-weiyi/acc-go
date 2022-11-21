@@ -1,13 +1,13 @@
 package initialize
 
 import (
+	"acc/server/global"
+	"acc/server/utils"
+	internal "acc/server/utils/logger"
 	"fmt"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"os"
-	"ve-blog-go/server/global"
-	"ve-blog-go/server/utils"
-	internal "ve-blog-go/server/utils/logger"
 )
 
 // Zap 获取 zap.Logger

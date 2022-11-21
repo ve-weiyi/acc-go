@@ -1,9 +1,9 @@
 package global
 
 import (
+	"acc/server/config"
+	"acc/server/utils/timer"
 	"sync"
-	"ve-blog-go/server/config"
-	"ve-blog-go/server/utils/timer"
 
 	"github.com/songzhibin97/gkit/cache/local_cache"
 

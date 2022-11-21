@@ -1,11 +1,11 @@
 package internal
 
 import (
+	"acc/server/global"
 	"fmt"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"time"
-	"ve-blog-go/server/global"
 )
 
 var Zap = new(_zap)

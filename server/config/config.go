@@ -1,6 +1,6 @@
 package config
 
-import "ve-blog-go/server/config/properties"
+import "acc/server/config/properties"
 
 type Server struct {
 	System properties.System `mapstructure:"system" json:"system" yaml:"system"`
