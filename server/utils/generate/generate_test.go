@@ -11,7 +11,7 @@ import (
 )
 
 // GEN 自动生成 GORM 模型结构体文件及使用示例 https://blog.csdn.net/Jeffid/article/details/126898000
-const dsn = "root:mysql7914@(127.0.0.1:3306)/anker?charset=utf8mb4&parseTime=True&loc=Local"
+const dsn = "root:mysql7914@(127.0.0.1:3306)/ankerwork?charset=utf8mb4&parseTime=True&loc=Local"
 
 func TestGenerator(t *testing.T) {
 
@@ -22,13 +22,14 @@ func TestGenerator(t *testing.T) {
 	}
 	log.Println("mysql connection done")
 
+	path := "../../model/anker"
 	// 生成实例
 	// 指定生成代码的具体(相对)目录，默认为：./dao
 	// 默认情况下需要使用WithContext之后才可以查询，但可以通过设置gen.WithoutContext避免这个操作
 	g := gen.NewGenerator(gen.Config{
 		// 相对执行`go run`时的路径, 会自动创建目录
-		OutPath:      "../model/dao",
-		ModelPkgPath: "../model/entity", // 默认情况下会跟随OutPath参数，在同目录下生成model目录
+		OutPath:      path + "/dao",
+		ModelPkgPath: path + "/entity", // 默认情况下会跟随OutPath参数，在同目录下生成model目录
 		// WithDefaultQuery 生成默认查询结构体(作为全局变量使用), 即`Q`结构体和其字段(各表模型)
 		// WithoutContext 生成没有context调用限制的代码供查询
 		// WithQueryInterface 生成interface形式的查询代码(可导出), 如`Where()`方法返回的就是一个可导出的接口类型
@@ -86,8 +87,8 @@ func TestGenerator(t *testing.T) {
 
 	// 创建模型的结构体,生成文件在 model 目录; 先创建的结果会被后面创建的覆盖
 	// 创建全部模型文件, 并覆盖前面创建的同名模型
-	allModel := g.GenerateAllTable(fieldOpts...)
-	g.ApplyBasic(allModel...)
+	//g.ApplyBasic(g.GenerateAllTable(fieldOpts...))
 
+	g.ApplyBasic(g.GenerateModel("feedback_callback", fieldOpts...))
 	g.Execute()
 }
