@@ -1,7 +1,7 @@
 package jjwt
 
 import (
-	"acc/config"
+	"acc/server/global"
 	"errors"
 	"github.com/dgrijalva/jwt-go"
 )
@@ -25,7 +25,7 @@ var (
 
 func NewJWT() *JWT {
 	return &JWT{
-		[]byte(config.AppConfig.JwtSecret),
+		[]byte(global.GVA_CONFIG.JWT.SigningKey),
 	}
 }
 
@@ -37,7 +37,6 @@ func (j *JWT) CreateToken(claims JwtClaims) (string, error) {
 
 // ParserToken 解析token
 func (j *JWT) ParserToken(tokenString string) (*JwtClaims, error) {
-
 	token, err := jwt.ParseWithClaims(tokenString, &JwtClaims{}, func(token *jwt.Token) (interface{}, error) {
 		return j.SigningKey, nil
 	})

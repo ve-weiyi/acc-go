@@ -98,7 +98,7 @@ var cfg *ini.File
 func Setup() {
 	configMap("app", AppConfig)
 	configMap("image", ImageConfig)
-	configMap("logger", LoggerConfig)
+	configMap("glog", LoggerConfig)
 	configMap("mongodb", MongodbConfig)
 	configMap("mysql", MysqlConfig)
 	configMap("redis", RedisConfig)

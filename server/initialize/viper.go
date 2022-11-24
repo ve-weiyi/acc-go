@@ -3,7 +3,6 @@ package initialize
 import (
 	"acc/server/config"
 	"acc/server/global"
-	"encoding/json"
 	"github.com/spf13/viper"
 	"log"
 )
@@ -28,7 +27,7 @@ func ReadConfig(path string) {
 	if err == nil {
 		log.Printf("use config file -> %con\n", v.ConfigFileUsed())
 	} else {
-		log.Println(err)
+		log.Fatal(err)
 	}
 
 	con := config.Server{}
@@ -37,9 +36,8 @@ func ReadConfig(path string) {
 	}
 
 	//转换json打印
-	jj, err := json.MarshalIndent(con, "", "\t")
-
-	log.Println(string(jj))
+	//jj, err := json.MarshalIndent(con, "", "\t")
+	//log.Println(string(jj))
 
 	global.GVA_VP = v
 	global.GVA_CONFIG = con

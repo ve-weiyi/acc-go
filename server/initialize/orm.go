@@ -46,6 +46,6 @@ func Gorm() {
 	sqlDB.SetMaxOpenConns(100)
 	sqlDB.SetConnMaxLifetime(time.Hour)
 
-	global.GVA_LOG.Info("Mysql 数据库连接成功")
+	global.GVA_LOG.Debug("Mysql 数据库连接成功")
 	global.GVA_DB = db
 }

@@ -2,14 +2,13 @@ package global
 
 import (
 	"acc/server/config"
+	"acc/server/utils/glog"
 	"acc/server/utils/timer"
 	"sync"
 
 	"github.com/songzhibin97/gkit/cache/local_cache"
 
 	"golang.org/x/sync/singleflight"
-
-	"go.uber.org/zap"
 
 	"github.com/go-redis/redis"
 	"github.com/spf13/viper"
@@ -24,7 +23,7 @@ var (
 	GVA_REDIS  *redis.Client
 	GVA_VP     *viper.Viper
 	// GVA_LOG    *oplogging.Logger
-	GVA_LOG                 *zap.Logger
+	GVA_LOG                 *glog.Logger
 	GVA_Timer               = timer.NewTimerTask()
 	GVA_Concurrency_Control = &singleflight.Group{}
 

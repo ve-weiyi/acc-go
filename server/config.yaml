@@ -6,7 +6,7 @@ system:
   use-multipoint: false
   use-redis: false
   #项目运行时生成的目录
-  RuntimeRootPath: runtime
+  runtime-path: runtime/
   #语言 zh,en
   Locale: zh
 
@@ -38,10 +38,10 @@ jwt:
   issuer: qmPlus
 
 zap:
-  level: info
+  level: debug
   prefix:
   format: console
-  director: log
+  director: runtime/log
   encode-level: LowercaseColorLevelEncoder
   stacktrace-key: stacktrace
   max-age: 0

@@ -1,6 +1,7 @@
 package middleware
 
 import (
+	"acc/server/global"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
@@ -14,7 +15,7 @@ func Logger() gin.HandlerFunc {
 	log := logrus.New()
 
 	// 设置输出文件
-	filePath := "log/"
+	filePath := global.GVA_CONFIG.System.RuntimePath + "log/"
 	linkName := "latest_log.log"
 	// 		打开指定处的文件，并指定权限为：可读可写，可创建
 	src, err := os.OpenFile(filePath, os.O_RDWR|os.O_CREATE, 0755) //0755-> rwx r-x r-x linux知识

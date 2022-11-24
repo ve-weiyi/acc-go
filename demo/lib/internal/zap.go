@@ -28,7 +28,7 @@ func (z *_zap) GetEncoderConfig() zapcore.EncoderConfig {
 		MessageKey:     "message",
 		LevelKey:       "level",
 		TimeKey:        "time",
-		NameKey:        "logger",
+		NameKey:        "glog",
 		CallerKey:      "caller",
 		StacktraceKey:  global.GVA_CONFIG.Zap.StacktraceKey,
 		LineEnding:     zapcore.DefaultLineEnding,

@@ -1,17 +1,21 @@
 package jjwt
 
 import (
-	"acc/app/model/entity"
-	"acc/config"
-	"acc/lib/logger"
+	"acc/server/global"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 	"strings"
 	"time"
 )
 
+type ClaimsInfo struct {
+	ID       int    `gorm:"column:id;type:int;primaryKey;autoIncrement:true" json:"id"`
+	Username string `gorm:"column:username;type:varchar(255);primaryKey" json:"username"`
+	Password string `gorm:"column:password;type:varchar(255);not null" json:"password"`
+}
+
 // 根据用户登录信息生成token，
-func CreateToken(auth entity.UserAuth) string {
+func CreateTokenByInfo(auth ClaimsInfo) string {
 	j := NewJWT()
 	claims := JwtClaims{
 		Uid:      auth.ID,
@@ -19,23 +23,23 @@ func CreateToken(auth entity.UserAuth) string {
 		StandardClaims: jwt.StandardClaims{
 			NotBefore: time.Now().Unix(),
 			ExpiresAt: time.Now().Add(12 * time.Hour).Unix(),
-			Issuer:    config.AppConfig.Name,
+			Issuer:    "jjwt",
 		},
 	}
 	token, err := j.CreateToken(claims)
 	if err != nil {
-		logger.Debug(err.Error())
+		global.GVA_LOG.Debug(err.Error())
 	}
 	return token
 }
 
-func ParseToken(c *gin.Context) (*JwtClaims, error) {
+func ParseTokenByGin(c *gin.Context) (*JwtClaims, error) {
 	tokenHeader := c.Request.Header.Get("Authorization")
 
 	//token是空
 	if tokenHeader == "" {
 		tokenHeader, _ = c.Cookie("token")
-		logger.Debug("get token by cookie :" + tokenHeader)
+		global.GVA_LOG.Debug("get token by cookie :" + tokenHeader)
 		return nil, TokenInvalid
 	}
 
