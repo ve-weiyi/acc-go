@@ -24,11 +24,11 @@ func ReadConfig(path string) {
 	// 5. 开始读根目录下的 .env 文件，读不到会报错
 	err := v.ReadInConfig()
 
-	if err == nil {
-		log.Printf("use config file -> %con\n", v.ConfigFileUsed())
-	} else {
+	if err != nil {
 		log.Fatal(err)
 	}
+
+	log.Printf("use config file -> %con\n", v.ConfigFileUsed())
 
 	con := config.Server{}
 	if err := v.Unmarshal(&con); err != nil {

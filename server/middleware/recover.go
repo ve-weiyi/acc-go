@@ -1,7 +1,6 @@
 package middleware
 
 import (
-	"acc/server/global"
 	"net"
 	"net/http"
 	"net/http/httputil"
@@ -13,13 +12,14 @@ import (
 	"go.uber.org/zap"
 )
 
-// GinRecovery recover掉项目可能出现的panic，并使用zap记录相关日志
+// GinRecovery 用于替换gin框架的Recovery中间件，因为传入参数，再包一层
 func GinRecovery(stack bool) gin.HandlerFunc {
+	logger := zap.L()
 	return func(c *gin.Context) {
 		defer func() {
+			// defer 延迟调用，出了异常，处理并恢复异常，记录日志
 			if err := recover(); err != nil {
-				// Check for a broken connection, as it is not really a
-				// condition that warrants a panic stack trace.
+				// 这个不必须，检查是否存在断开的连接(broken pipe或者connection reset by peer)---------开始--------
 				var brokenPipe bool
 				if ne, ok := err.(*net.OpError); ok {
 					if se, ok := ne.Err.(*os.SyscallError); ok {
@@ -28,32 +28,37 @@ func GinRecovery(stack bool) gin.HandlerFunc {
 						}
 					}
 				}
-
+				// httputil包预先准备好的DumpRequest方法
 				httpRequest, _ := httputil.DumpRequest(c.Request, false)
 				if brokenPipe {
-					global.GVA_LOG.Error(c.Request.URL.Path,
+					logger.Error(c.Request.URL.Path,
 						zap.Any("error", err),
 						zap.String("request", string(httpRequest)),
 					)
-					// If the connection is dead, we can't write a status to it.
-					_ = c.Error(err.(error)) // nolint: errcheck
+					// 如果连接已断开，我们无法向其写入状态
+					c.Error(err.(error))
 					c.Abort()
 					return
 				}
+				//  这个不必须，检查是否存在断开的连接(broken pipe或者connection reset by peer)---------结束--------
 
+				// 是否打印堆栈信息，使用的是debug.Stack()，传入false，在日志中就没有堆栈信息
 				if stack {
-					global.GVA_LOG.Error("[Recovery from panic]",
+					logger.Error("[Recovery from panic]",
 						zap.Any("error", err),
 						zap.String("request", string(httpRequest)),
 						zap.String("stack", string(debug.Stack())),
 					)
 				} else {
-					global.GVA_LOG.Error("[Recovery from panic]",
+					logger.Error("[Recovery from panic]",
 						zap.Any("error", err),
 						zap.String("request", string(httpRequest)),
 					)
 				}
-				c.AbortWithStatus(http.StatusInternalServerError)
+				// 有错误，直接返回给前端错误，前端直接报错
+				//c.AbortWithStatus(http.StatusInternalServerError)
+				// 该方式前端不报错
+				c.JSON(http.StatusInternalServerError, "Internal Service Error")
 			}
 		}()
 		c.Next()

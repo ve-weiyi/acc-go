@@ -3,6 +3,7 @@ package initialize
 import (
 	"acc/server/global"
 	"fmt"
+	"go.uber.org/zap"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
@@ -45,7 +46,7 @@ func Gorm() {
 	sqlDB.SetMaxIdleConns(10)
 	sqlDB.SetMaxOpenConns(100)
 	sqlDB.SetConnMaxLifetime(time.Hour)
-
+	zap.L().Debug("hello world")
 	global.GVA_LOG.Debug("Mysql 数据库连接成功")
 	global.GVA_DB = db
 }

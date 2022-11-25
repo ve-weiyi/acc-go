@@ -4,7 +4,6 @@ import (
 	"acc/server/global"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	"go.uber.org/zap"
 	"net/http"
 	"time"
 )
@@ -12,8 +11,8 @@ import (
 // 处理跨域请求,支持options访问
 func Cors() gin.HandlerFunc {
 	return func(c *gin.Context) {
+		global.GVA_LOG.Info(c.Request.URL)
 
-		global.GVA_LOG.Info("", zap.Any("", c.Request.URL))
 		method := c.Request.Method
 		origin := c.Request.Header.Get("Origin") //请求头部
 

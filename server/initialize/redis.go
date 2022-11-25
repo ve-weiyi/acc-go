@@ -17,8 +17,8 @@ func Redis() {
 	pong, err := client.Ping().Result()
 	if err != nil {
 		global.GVA_LOG.Error("redis connect ping failed, err:", zap.Error(err))
-	} else {
-		global.GVA_LOG.Info("Redis 连接成功: " + pong)
-		global.GVA_REDIS = client
+		return
 	}
+	global.GVA_LOG.Info("Redis 连接成功: " + pong)
+	global.GVA_REDIS = client
 }

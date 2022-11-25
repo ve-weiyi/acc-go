@@ -13,6 +13,10 @@ import (
 
 var _logger *Logger
 
+const (
+	prefix = "[GLOG]"
+)
+
 type LogConfig struct {
 	Level      string `json:"level"`       // Level 最低日志等级，DEBUG<INFO<WARN<ERROR<FATAL 例如：info-->收集info等级以上的日志
 	FileName   string `json:"file_name"`   // FileName 日志文件位置
@@ -29,6 +33,8 @@ func init() {
 
 func InitLogger(cfg LogConfig) {
 	_logger = NewLogger(cfg, 2)
+	// 替换zap包中全局的logger实例，后续在其他包中只需使用zap.L()调用即可
+	zap.ReplaceGlobals(NewLogger(cfg, 0).log)
 }
 
 func GetDefaultConfig() LogConfig {
@@ -62,7 +68,7 @@ func getEncoder(format string) zapcore.Encoder {
 		StacktraceKey:  "stacktrace",
 		LineEnding:     zapcore.DefaultLineEnding,
 		EncodeLevel:    zapcore.CapitalColorLevelEncoder,
-		EncodeTime:     zapcore.RFC3339TimeEncoder,
+		EncodeTime:     CustomTimeEncoder,
 		EncodeDuration: zapcore.SecondsDurationEncoder,
 		EncodeCaller:   zapcore.ShortCallerEncoder,
 	}
@@ -83,6 +89,11 @@ func getLogWriter(lumberJackLogger *lumberjack.Logger) zapcore.WriteSyncer {
 	syncConsole := zapcore.AddSync(os.Stderr)     // 打印到控制台
 	//同时输出控制台和文件
 	return zapcore.NewMultiWriteSyncer(syncFile, syncConsole)
+}
+
+// CustomTimeEncoder 自定义日志输出时间格式,方便加前缀
+func CustomTimeEncoder(t time.Time, encoder zapcore.PrimitiveArrayEncoder) {
+	encoder.AppendString(prefix + t.Format("2006/01/02-15:04:05.000"))
 }
 
 // 负责日志切割配置
@@ -129,17 +140,15 @@ func NewLogger(cfg LogConfig, skip int) *Logger {
 	core := zapcore.NewTee(
 		// 保活日志
 		zapcore.NewCore(encoder, zapcore.AddSync(lumberJackLogger), savelog),
-		// 错误日志
+		// 错误日志:输入到文件中，使用json格式，无颜色
 		zapcore.NewCore(encoder, zapcore.AddSync(lumberJackLogger), errorlog),
-		// 控制台日志
+		// 控制台日志:使用彩色的console输出格式
 		zapcore.NewCore(colorEncoder, zapcore.AddSync(os.Stderr), out.level),
 	)
 
 	// 创建一个将日志写入 WriteSyncer 的核心。
 	// Logger.Debug->skip1  glog.Debug->skip2
 	logger := zap.New(core, zap.AddCaller(), zap.AddCallerSkip(skip))
-	// 替换zap包中全局的logger实例，后续在其他包中只需使用zap.L()调用即可
-	zap.ReplaceGlobals(logger)
 
 	out.rlog = lumberJackLogger
 	out.log = logger
