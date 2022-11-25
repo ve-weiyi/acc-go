@@ -41,7 +41,7 @@ zap:
   level: debug
   prefix:
   format: console
-  director: runtime/log
+  director: runtime/log/
   encode-level: LowercaseColorLevelEncoder
   stacktrace-key: stacktrace
   max-age: 0

@@ -10,7 +10,7 @@ import (
 
 // 3.init先于main运行
 func init() {
-	Index()
+	log.SetFlags(log.LstdFlags | log.Llongfile)
 	log.Println("init invoke")
 }
 
@@ -34,15 +34,4 @@ func main() {
 		defer db.Close()
 	}
 
-}
-
-func Index() {
-	//当发生错误或者查看信息的时候，需要查看日志，
-	//默认的日志是不显示行号的，
-	//可以通过log.SetFlags函数设置显示行号
-	//log.LstdFlags：标准默认的日志信息
-	//log.Llongfile：显示日志的文件（绝对路径）和对应行号
-	//log.Lshortfile：显示日志的文件（不含路径）和对应行号
-	log.SetFlags(log.LstdFlags | log.Llongfile)
-	log.Println("格式化log日志")
 }
